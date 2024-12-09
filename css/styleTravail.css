@@ -1,0 +1,220 @@
+/* Section principale */
+main {
+    padding: 2rem;
+}
+
+
+article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border: white solid 1px;
+    background-color:rgba(199, 197, 197, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.python{
+    flex-direction: row-reverse;
+}
+
+/* Images */
+article img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte */
+article p {
+    flex: 1;
+    text-align: justify;
+    font-size: 2vw;
+    line-height: 1.6;
+    text-align: center;
+}
+
+article p strong {
+    font-weight: bold;
+}
+
+
+h3{
+    font-size :3vw;
+    margin: auto;
+    text-align: center;
+}
+
+article p ul {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    list-style: disc;
+}
+
+article p ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    article {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    .navelem {
+        font-size: 0.8rem;
+    }
+
+    .python{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+/* Animation de fondu et de montée */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de glissement à gauche */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation de glissement à droite */
+@keyframes slideInRight{
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation d'apparition pour les images */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Application des animations */
+article {
+    animation: slideInLeft 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.python p{
+    width: 100%;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 1000px;
+    max-height: 1500px;
+    width: 90%;
+    position: relative;
+}
+
+.modal-content{
+    font-size: 0.5rem;
+}
+
+@media (min-width:576px) {
+    .modal-content{
+    font-size: 0.7rem;
+}
+}
+
+@media (min-width:700px) {
+    .modal-content{
+    font-size: 0.9rem;
+}
+}
+@media (min-width:1024px) {
+    .modal-content{
+    font-size: 1.05rem;
+}
+}
+
+@media (min-width:1400px) {
+    .modal-content{
+    font-size: 1.4rem;
+}
+}
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation: fadeIn 1s ease-in-out forwards;
+
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+article{
+    cursor: pointer;
+}
+
+
+body.dark-mode {
+    color: #ffffff;
+}
+
+article.dark-mode{
+    color: #ffffff;
+}
+
+h3.dark-mode{
+    color: #ffffff;
+}
+
+
+body.dark-mode .textePresentation,body.dark-mode .titrePresentation{
+    color: #ffffff;
+}

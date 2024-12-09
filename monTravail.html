@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleTravail.css">
+
+
+
+
+    <title>Travaux</title>
+</head>
+
+
+<body>
+    <nav >
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar ">
+            <li class="col-1 d-flex"><a href="index.html"><img src="images/menu_logo.png" alt="Menu" class="menu-icon img-fluid"></a></li>
+            <li class="col-2 navelem justify-content-center d-flex" id="nameDisplay"><a href="index.html">ACHERAIOU Menad</a></li>
+            <li class="col-2 navelem justify-content-center d-flex"><a href="competences.html" class="contact-bouton" >Compétences</a></li>
+            <li class="col-2 navelem justify-content-center d-flex travail"><a href="monTravail.html" class="contact-bouton" >Travaux</a></li>
+            <li class="col-2 navelem justify-content-center d-flex"><a href="contact.html" class="contact-bouton">Contact</a></li>
+            <li class="col-2 navelem justify-content-center d-flex"><a href="aPropos.html" class="contact-bouton" >A propos</a></li>
+        </ul>
+    </nav>
+    <main>
+    <section>
+        <br>
+        <br>
+        <br>
+
+        <article class="row" class="project-card row" onclick="openModal('project1')">
+            <img src="images/Automate.jpg" class="img-fluid col-5"></img>
+            <div class="col-md-7 col-11" >
+            <h3 >Automates en Python</h3>
+                <p>Implémentation des automates finis avec des fonctionnalités avancées.</p>
+            </div>
+        </div>
+        </article>
+        <br>        <br>        <br>
+
+
+        <article class="row python project-card row" onclick="openModal('project2')">
+            <img src="images/Projet Algo Géné.png " class="img-fluid col-5"></img>
+            <div class="col-md-7 col-11">
+            <h3 >Algorithme Génétique en Python</h3>
+            <p class="col-md-7 col-11"> Optimisation inspirée par la biologie pour résoudre des problèmes complexes.</p>
+            </div>
+        </article>
+        <br>
+        <br>        <br>
+
+
+        <article class="row project-card row" onclick="openModal('project3')">
+            <img src="images/ProjetC.jpg"  class="img-fluid col-5"></img>
+            <div class="col-md-7 col-11">
+                <h3>Écosystème en C </h3>
+                <p>Simulation interactive d'un écosystème avec des interactions dynamiques.</p>
+
+            </div>
+
+        </article>
+
+    </section>
+    
+
+    <!-- Modal pour Automates -->
+<div class="modal" id="project1">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project1')">&times;</span>
+        <h3>Automates en Python</h3>
+        <p>
+        Ce projet illustre ma maîtrise des concepts théoriques et pratiques des automates à travers une implémentation en Python.
+        Les automates, outils fondamentaux en informatique théorique, sont utilisés pour résoudre des problèmes tels que la reconnaissance de motifs ou l'analyse syntaxique.  
+       
+       Points clés du projet :
+       - Création d'automates : Possibilité de définir des automates finis déterministes (AFD) et non déterministes (AFN) en spécifiant leurs états, transitions, état initial et états finaux.  
+       - Simulation : Vérification si une chaîne appartient au langage reconnu par l'automate.  
+       - Manipulations avancées :  
+         - Conversion d'AFN en AFD.  
+         - Minimisation d'automates pour optimiser leur représentation.  
+         - Opérations comme l'union et l'intersection des langages.  
+       - Visualisation : Représentation des automates sous forme graphique pour une meilleure compréhension .  
+       
+       Résultats :  
+       - Outil pédagogique pour expliquer les automates et leur fonctionnement.  
+       - Application pratique pour des projets nécessitant la reconnaissance ou la transformation de chaînes de caractères.  
+       
+       Compétences mises en œuvre :  
+       - Programmation en Python.  
+       - Algorithmes d'informatique théorique (automates finis, conversion AFN -> AFD, minimisation).  
+       - Visualisation de données avec des bibliothèques Python.  
+       
+       Ce projet met en avant mes capacités à transformer des concepts théoriques en solutions pratiques, 
+       tout en utilisant les outils modernes de programmation pour produire des applications robustes et claires.                
+   </p>.
+        <a href="https://github.com/MenadAcheraiou/Simulation-EcoSysteme-C" target="_blank">Lien GitHub</a>
+    </div>
+</div>
+<!-- Modal pour Algorithme génétique -->
+<div class="modal" id="project2">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project2')">&times;</span>
+        <h3>Algorithme Génétique</h3>
+        <p>               Ce projet consiste en la modélisation d'un écosystème simple à l'aide du langage C. L'objectif est de simuler les interactions entre différentes entités 
+        biologiques, comme les prédateurs et les proies, dans un environnement structuré. 
+        Le programme met en œuvre des principes basés sur l'écologie, comme la reproduction, la survie et la compétition pour les ressources.  
+        
+        Points clés du projet :  
+        - Représentation de l'écosystème :  
+          - Une grille bidimensionnelle où chaque cellule représente une unité de l'environnement.  
+          - Les entités biologiques (prédateurs, proies, herbes) sont placées dans cette grille.  
+        
+        Résultats :  
+        - Simulation dynamique d'un écosystème avec observation des interactions entre espèces.  
+        - Analyse des conditions menant à l'équilibre, l'extinction ou la surpopulation.  
+        
+        Compétences mises en œuvre :  
+        - Programmation en C avec gestion manuelle de la mémoire.  
+        - Utilisation de structures de données pour modéliser l'environnement.  
+        - Simulation basée sur des règles et conditions complexes.  
+        
+        Technologies utilisées :  
+        - Langage C pour le développement.  
+        - Algorithmes de simulation et visualisation console.  
+        
+        Ce projet démontre mes capacités à créer des simulations interactives et à modéliser des systèmes complexes
+        tout en optimisant l'utilisation des ressources, essentielle en programmation bas niveau.</p>
+        <a href="https://github.com/are-dynamic-2024-g4/algo-genetique" target="_blank">Lien GitHub</a>
+    </div>
+</div>
+<!-- Modal pour Écosystème -->
+<div class="modal" id="project3">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('project3')">&times;</span>
+        <h3>Écosystème en C</h3>
+        <p>                Ce projet consiste en la modélisation d'un écosystème simple à l'aide du langage C. L'objectif est de simuler les interactions entre différentes entités 
+            biologiques, comme les prédateurs et les proies, dans un environnement structuré. 
+            Le programme met en œuvre des principes basés sur l'écologie, comme la reproduction, la survie et la compétition pour les ressources.  
+            
+            Points clés du projet :  
+            - Représentation de l'écosystème :  
+              - Une grille bidimensionnelle où chaque cellule représente une unité de l'environnement.  
+              - Les entités biologiques (prédateurs, proies, herbes) sont placées dans cette grille.  
+            
+            Résultats :  
+            - Simulation dynamique d'un écosystème avec observation des interactions entre espèces.  
+            - Analyse des conditions menant à l'équilibre, l'extinction ou la surpopulation.  
+            
+            Compétences mises en œuvre :  
+            - Programmation en C avec gestion manuelle de la mémoire.  
+            - Utilisation de structures de données pour modéliser l'environnement.  
+            - Simulation basée sur des règles et conditions complexes.  
+            
+            Technologies utilisées :  
+            - Langage C pour le développement.  
+            - Algorithmes de simulation et visualisation console.  
+            
+            Ce projet démontre mes capacités à créer des simulations interactives et à modéliser des systèmes complexes
+            tout en optimisant l'utilisation des ressources, essentielle en programmation bas niveau.</p>
+
+        <a href="https://github.com/MenadAcheraiou/Simulation-EcoSysteme-C" target="_blank">Lien GitHub</a>
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+    <div class="footer-content col-12">
+        <div class="footer-info d-flex justify-content-center">
+            <p>Conçu par ACHERAIOU Menad. Tous droits réservés.</p>
+        </div>
+        <div class="footer-legal d-flex justify-content-center">
+            <ul>
+                <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                <li><a href="conditions-utilisation.html">Conditions d'Utilisation</a></li>
+            </ul>
+        </div>
+    </div>
+        <p>Suivez-moi sur mes réseaux sociaux :</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/menad-acheraiou-0b8637302/" target="_blank" class="social-icon linkedin">
+                <img src="images/linkedin logo.png" class="img-fluid" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MenadAcheraiou" target="_blank" class="social-icon github ">
+                <img src="images/Octicons-mark-github.svg" class="img-fluid" alt="GitHub">
+            </a>
+            <a href="https://www.facebook.com/menad.ache/" target="_blank" class="social-icon facebook">
+                <img src="images/facebook.png" class="img-fluid" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/menad_ach/" target="_blank" class="social-icon instagram">
+                <img src="images/instagram.webp" class="img-fluid" alt="Instagram">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<div id="dark-mode-toggle" class="dark-mode-toggle">
+    <button style="background: none;border: none;">🌙</button>
+</div>
+    <script src="script/script.js"></script>
+</body>
+</html>

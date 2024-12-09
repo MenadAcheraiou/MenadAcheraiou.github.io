@@ -1,0 +1,636 @@
+
+@font-face {
+    font-family: fatalFury;
+    src: url(../fonts/m04b.TTF);
+}
+
+ul{
+    list-style:none;
+}
+
+
+.navbar {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.titre{
+    margin-top: 8vw;
+    width:85%;
+    text-align: center;
+}
+
+#nameDisplay{
+    font-family:fatalFury;
+    font-size: 2vw;
+
+}
+h1 {
+    font-size: 5vw;
+    font-weight: bold;
+    margin-left: 2vw;
+    position: relative;
+    opacity: 0; /* Le texte commence invisible */
+    animation-timing-function: cubic-bezier(0,0,1,0);
+    animation: slideIn1 2s forwards; /* Animation pour faire entrer le texte */
+}
+
+
+.etudiant{
+    margin-top: 4%;
+    font-size: 3vw;
+    font-weight: bold;
+    position: relative;
+    opacity: 0; /* Le texte commence invisible */
+    animation-timing-function: cubic-bezier(0,0,1,0);
+    animation: slideIn2 2s forwards; /* Animation pour faire entrer le texte */
+    animation-delay: 800ms;
+}
+
+.logo {
+    margin-top: -6vw;
+    margin-left:-10vw;
+    max-width: 100%;
+} 
+
+.contact-bouton{
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size:1.7vw;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 7% 15%;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Effets au survol */
+.contact-bouton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+}
+
+/* Effet d'appui */
+.contact-bouton:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentation {
+    text-align: center;
+    margin-top: 2vw;
+    background-color: rgba(69, 79, 79, 0.4);
+    width: 85%;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 2rem; /* Ajoute un espacement interne */
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Bordure semi-transparente */
+    border-radius: 15px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation fluide */
+}
+
+/* Effet au survol */
+.presentation:hover {
+    transform: scale(1.02); /* Zoom léger */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Ombre plus marquée */
+}
+
+
+.titrePresentation {
+    font-size: 3.8vw;
+    color: #111111;
+    font-weight: bold;
+    margin-top: 1vh;
+    animation: fadeEffect 3s forwards ease-in-out; /* Applique l'animation */
+}
+
+.textePresentation {
+    font-size:1.8vw;
+    color: #171717;
+    line-height: 1.6;
+    margin: auto;
+    margin-top: 3vw;
+}
+
+.btn-decouvrir {
+    display: block;  /* Change le bouton en un élément de bloc */
+    margin: auto ;  /* Centre le bouton horizontalement avec un espace en haut */
+    margin-top: 10vh;
+    padding: 50px 0px;
+    font-size: 1.23vw;
+    text-align: center;
+    color: white;
+    background-color: #4CAF50; /* Vert */
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-decouvrir:hover {
+    background-color: #45a049; /* Légèrement plus foncé au survol */
+}
+
+.download-btn{
+    display: block;  /* Change le bouton en un élément de bloc */
+    margin: auto ;  /* Centre le bouton horizontalement avec un espace en haut */
+    margin-top: 10vh;
+    padding: 50px 0px;
+    font-size: 1.6vw;
+    text-align: center;
+    color: white;
+    background-color: #4CAF50; /* Vert */
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 26vh;
+
+}
+
+.download-btn:hover {
+    background-color: #45a049; /* Légèrement plus foncé au survol */
+}
+
+/* Animation de la transparence */
+@keyframes fadeEffect {
+    0% {
+        opacity: 0; /* Entièrement visible */
+    }
+    100% {
+        opacity: 1; /* Semi-transparent */
+    }
+}
+
+
+
+
+/* Définition de l'animation */
+@keyframes slideIn1 {
+    0% {
+        left: -100%; /* Le texte commence à gauche en dehors de l'écran */
+        opacity: 0; /* Le texte est invisible au début */
+    }
+    70% {
+        transform: translate(-35%);
+    }
+
+    100% {
+        left: 50%; /* Le texte se déplace vers le centre */
+        transform: translateX(-50%); /* Centrage exact */
+        opacity: 1; /* Le texte devient visible */
+    }
+}
+
+@keyframes slideIn2 {
+    0% {
+        left: -100%; /* Le texte commence à gauche en dehors de l'écran */
+        opacity: 0; /* Le texte est invisible au début */
+    }
+    70% {
+        transform: translate(-30%);
+    }
+
+    100% {
+        left: 50%; /* Le texte se déplace vers le centre */
+        transform: translateX(-40%); /* Centrage exact */
+        opacity: 1; /* Le texte devient visible */
+    }
+}
+
+main{
+    color: black !important;;
+}
+
+.boutonfins{
+    margin: auto;
+}
+
+.liens{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    padding: 0;
+}
+
+.contact{
+    margin-right: 0;
+    padding-right: 0;
+}
+
+
+.menu-icon:hover{
+    
+    transform: scale(1.1); /* Agrandissement au survol */
+}
+
+.travail{
+    margin-right: -30px;
+}
+
+/* Styles de base pour le menu */
+.navbar {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Animation pour l'apparition du menu */
+@keyframes slideInMenu {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutMenu {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+
+
+/* Cacher le menu sur mobile */
+@media screen and (max-width: 768px) {
+    /* Barre de navigation */
+    .navbar {
+        list-style: none;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: -100%; /* Par défaut, la navbar est hors de l'écran */
+        height: 100%;
+        width: 80%; 
+        max-width: 300px;
+        background-color: #333;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        z-index: 1; 
+    }
+    
+    /* Affichage de la navbar en mode ouvert */
+    /* État visible (menu ouvert) */
+    .navbar.show {
+        transform: translateX(0%); /* Amène le menu dans l'écran */
+        left:0;
+        opacity: 1;
+    }
+
+    /* État caché avec animation (menu fermé) */
+    .navbar.hide {
+        transform: translateX(-100%); /* Replace le menu hors de l'écran */
+        opacity: 0;
+    }
+
+
+    h1 {
+        font-size: 5.5vw;
+        margin-top: 5vh;
+
+    }
+
+    .logo{
+        margin-top: 4vh;
+    }
+
+
+
+.etudiant{
+    margin-top: 4%;
+    font-size: 4vw;
+    font-weight: bold;
+    position: relative;
+    opacity: 0; /* Le texte commence invisible */
+    animation-timing-function: cubic-bezier(0,0,1,0);
+    animation: slideIn2 2s forwards; /* Animation pour faire entrer le texte */
+    animation-delay: 800ms;
+}
+
+
+.textePresentation {
+    font-size:3vw;
+
+}
+
+.titrePresentation{
+    font-size: 4.4vw;
+}
+
+
+
+.menu-icon{
+    min-width:50px;
+    margin-left: -10px;
+}
+
+    .contact-bouton{
+        font-size: 1.2rem;
+    }
+
+    
+    #nameDisplay{
+        font-size: x-large;
+        font-weight: 800;
+        background-color: rgba(200, 200, 200, 0.5);
+        border-radius: 20px;
+        padding: 10px 100px;
+    }
+    .navbar li {
+        margin: 20px 0;
+        text-align: center; /* Centrer le texte */
+    }
+
+    .navbar.show {
+        display: flex; /* Afficher le menu lorsqu'il est activé */
+    }
+    
+
+    /* Menu hamburger */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30px;
+        width: 30px;
+        position: fixed; /* Rendre le bouton toujours visible */
+        top: 15px;
+        left: 15px;
+        z-index: 100; /* Mettre au-dessus de tout */
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .hamburger-menu span {
+        height: 3px;
+        width: 100%; /* Ajuster pour bien aligner les barres */
+        background: #000000; /* Utiliser une couleur visible */
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    /* Animation pour le hamburger ouvert */
+    .hamburger-menu.open span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 8px);
+    }
+
+    .hamburger-menu.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -7px);
+    }
+
+    /* Assurer une bonne lisibilité du menu */
+    body.menu-open {
+        overflow: hidden; /* Désactiver le défilement lorsque le menu est ouvert */
+    }
+
+    .icon-link{
+        min-width: 30px;
+        margin-right:20px;
+        margin-left: -23px; 
+    }
+}
+.moi{
+    aspect-ratio: 1; /* Maintient le ratio 1:1 */
+    max-width: 500px;
+    margin: auto;
+    object-fit: contain; /* Découpe l'image si nécessaire pour remplir le conteneur */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+/* Conteneur des icônes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style des icônes */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Effet au survol */
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Icônes spécifiques */
+.social-icon.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.social-icon.github:hover {
+    background-color: #333;
+}
+
+.social-icon.facebook:hover {
+    background-color: #3b5998;
+}
+
+.social-icon.instagram:hover {
+    background-color: #e4405f;
+}
+
+/* Conteneur pour les différentes sections du footer */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.footer-info, .footer-legal, .footer-navigation {
+    text-align: left;
+}
+
+/* Style des liens dans le footer */
+.footer-info p {
+    margin: 0.5rem 0;
+}
+
+.footer-legal ul, .footer-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-legal li, .footer-navigation li {
+    margin: 0.5rem 0;
+}
+
+.footer-legal a, .footer-navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-legal a:hover, .footer-navigation a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Effet au survol des icônes */
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .footer-info, .footer-legal, .footer-navigation {
+        text-align: center;
+    }
+}
+
+/* Bouton Dark Mode */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Mode sombre */
+body.dark-mode {
+    color: #ffffff;
+}
+
+body.dark-mode .presentation {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+
+body.dark-mode .btn-decouvrir,
+body.dark-mode .download-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .btn-decouvrir:hover,
+body.dark-mode .download-btn:hover {
+    background-color: #555;
+}
+
+body.dark-mode .textePresentation,body.dark-mode .titrePresentation{
+    color: #ffffff;
+}
+
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #181818; /* Fond sombre */
+    color: #c0c0c0; /* Texte clair */
+}
+
+body.dark-mode .footer-legal a {
+    color: #b0b0b0;
+}
+
+body.dark-mode .footer-legal a:hover {
+    color: #ffffff; /* Liens au survol */
+}
+
+
+body.dark-mode button:hover, 
+body.dark-mode .contact-bouton:hover {
+    background-color: #333; /* Couleur au survol */
+    color: #ffffff;
+}
+
+/* Réseaux sociaux */
+body.dark-mode .social-icons a img {
+    filter: brightness(0.8); /* Icônes légèrement atténuées */
+}
+
+body.dark-mode .social-icons a img:hover {
+    filter: brightness(1); /* Accentuation au survol */
+}
+
+/* Autres ajustements pour le texte */
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li {
+    color: #d0d0d0; /* Texte par défaut */
+}
+
+
+@media (max-width: 576px) {
+    .titre{
+        margin: auto;
+        margin-top: 8vw;
+    }
+}
+
+@media (min-width: 768px) {
+
+}

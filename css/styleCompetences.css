@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #3e4a61; /* Couleur primaire */
+    --progress-bar-color: #3e4a61;
+    --text-color: #333;
+}
+
+/* Application des variables aux éléments de la page */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    margin: auto;
+    margin-top:15vh;
+    text-align: center;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Sections de compétences */
+main {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.competences {
+    margin-top: 1.5rem;
+}
+
+.competence {
+    margin-bottom: 1rem;
+}
+
+.competence span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 15px;
+    margin-top: 0.5rem;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--progress-bar-color);
+    transition: width 0.5s ease-in-out;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Styles supplémentaires si nécessaire */
+
+body.dark-mode{
+    color: #ffffff;
+}
+
+/* Style général pour le mode sombre */
+body.dark-mode {
+    color: #e0e0e0; /* Couleur de texte claire */
+}
+
+body.dark-mode nav a:hover {
+    color: #ffffff; /* Liens au survol */
+}
+
+/* Compétences */
+body.dark-mode .competences h2 {
+    color: #f5f5f5; /* Titres des sections */
+}
+
+body.dark-mode .competence {
+    color: #e0e0e0;
+}
+
+body.dark-mode .progress-bar {
+    background-color: #333; /* Fond de la barre de progression */
+}
+
+body.dark-mode .progress {
+    background-color: #4caf50; /* Couleur de progression (peut être personnalisée) */
+}

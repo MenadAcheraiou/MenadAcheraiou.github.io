@@ -1,0 +1,87 @@
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+/* Section principale */
+.apropos-main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section "À propos de moi" */
+.apropos-section h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.apropos-section p {
+    text-align: justify;
+}
+
+.col-md-6 {
+    flex: 1 1 45%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-md-6 img {
+    margin-top: 1.5rem;
+    display: block;
+}
+
+/* Section compétences et objectifs */
+.skills h2 {
+    margin-top: 2rem;
+    color: #16a085;
+}
+
+.skills ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        flex: 1 1 100%;
+    }
+}
+
+
+body.dark-mode {
+    color: #ffffff;
+}
+
+body.dark-mode .presentation {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+
+body.dark-mode .btn-decouvrir,
+body.dark-mode .download-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .btn-decouvrir:hover,
+body.dark-mode .download-btn:hover {
+    background-color: #555;
+}
+
+body.dark-mode h1,body.dark-mode h2,body.dark-mode h3,body.dark-mode p{
+    color:#ffffff;
+}
+

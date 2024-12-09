@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleContact.css">
+
+
+
+    <title>Contact</title>
+</head>
+<body>
+    <nav >
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar ">
+            <li class="col-1 d-flex"><a href="index.html"><img src="images/menu_logo.png" alt="Menu" class="menu-icon img-fluid"></a></li>
+            <li class="col-2 navelem justify-content-center d-flex" id="nameDisplay"><a href="index.html">ACHERAIOU Menad</a></li>
+            <li class="col-2 navelem justify-content-center d-flex"><a href="competences.html" class="contact-bouton" >Compétences</a></li>
+            <li class="col-2 navelem justify-content-center d-flex travail"><a href="monTravail.html" class="contact-bouton" >Travaux</a></li>
+            <li class="col-2 navelem justify-content-center d-flex"><a href="contact.html" class="contact-bouton">Contact</a></li>
+            <li class="col-2 navelem justify-content-center d-flex"><a href="aPropos.html" class="contact-bouton" >A propos</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="contact-main">
+        <section class="contact-section">
+            <h1>Contactez-moi</h1>
+            <p class="texteContact" style="color: black;">Vous avez une question ou un projet ? N'hésitez pas à me contacter, je serai ravi de discuter avec vous.</p>
+
+            <form id="contactForm" class="contact-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required placeholder="Entrez votre nom">
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required placeholder="Entrez votre adresse email">
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Écrivez votre message"></textarea>
+
+                <button type="submit" class="submit-btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content col-12">
+            <div class="footer-info d-flex justify-content-center">
+                <p>Conçu par ACHERAIOU Menad. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal d-flex justify-content-center">
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                    <li><a href="conditions-utilisation.html">Conditions d'Utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+            <p>Suivez-moi sur mes réseaux sociaux :</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/menad-acheraiou-0b8637302/" target="_blank" class="social-icon linkedin">
+                    <img src="images/linkedin logo.png" class="img-fluid" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/MenadAcheraiou" target="_blank" class="social-icon github ">
+                    <img src="images/Octicons-mark-github.svg" class="img-fluid" alt="GitHub">
+                </a>
+                <a href="https://www.facebook.com/menad.ache/" target="_blank" class="social-icon facebook">
+                    <img src="images/facebook.png" class="img-fluid" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/menad_ach/" target="_blank" class="social-icon instagram">
+                    <img src="images/instagram.webp" class="img-fluid" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="dark-mode-toggle" class="dark-mode-toggle">
+        <button style="background: none;border: none;">🌙</button>
+    </div>
+    <script src="script/script.js"></script>
+
+</body>
+</html>

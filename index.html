@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Portfolio Menad</title>
+    <link rel="icon" href="images/tabIcon.png">
+
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <div class="hamburger-menu">
+            <!-- Menu hamburger pour affichage mobile -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar">
+            <!-- Liste des liens de navigation -->
+            <li class="col-1 d-flex">
+                <a href="index.html">
+                    <img src="images/menu_logo.png" alt="Menu" class="menu-icon img-fluid d-flex justify-content-center">
+                </a>
+            </li>
+            <li class="col-2 navelem justify-content-center d-flex" id="nameDisplay">
+                <a href="index.html">ACHERAIOU Menad</a>
+            </li>
+            <li class="col-2 navelem justify-content-center d-flex">
+                <a href="competences.html" class="contact-bouton">Compétences</a>
+            </li>
+            <li class="col-2 navelem justify-content-center d-flex travail">
+                <a href="monTravail.html" class="contact-bouton">Travaux</a>
+            </li>
+            <li class="col-2 navelem justify-content-center d-flex">
+                <a href="contact.html" class="contact-bouton">Contact</a>
+            </li>
+            <li class="col-2 navelem justify-content-center d-flex">
+                <a href="aPropos.html" class="contact-bouton">À propos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Section d'introduction -->
+    <div class="row titre d-flex">
+        <div class="col-10 col-lg-10">
+            <h1>Bonjour, je m'appelle Acheraiou Menad</h1>
+            <p class="etudiant">Développeur à Sorbonne Université</p>
+        </div>
+        <div class="col-2 d-sm-inline d-none">
+            <img src="images/logo.png" alt="Logo fac" class="logo">
+        </div>
+    </div>
+
+    <!-- Section de présentation -->
+    <div class="presentation">
+        <h2 class="titrePresentation">Qui suis-je ?</h2>
+        <div class="row">
+            <p class="textePresentation col-md-7">
+                <!-- Présentation brève -->
+                Actuellement étudiant en L2 Informatique à Sorbonne Université, je suis également passionné par l'univers du développement et des technologies logicielles. Mon parcours se distingue par une quête constante de performance académique, comme en témoignent mes excellents résultats en première année, mais également par ma capacité à conjuguer rigueur universitaire et expérience professionnelle.
+            </p>
+            <img class="col-md-5 col-8 img-fluid moi" src="images/moi.png" alt="Photo de Menad">
+        </div>
+    </div>
+
+    <!-- Boutons d'actions -->
+    <div class="row col-10 boutonfins">
+        <a href="monTravail.html" class="btn-decouvrir col-5">Découvrez mon travail</a>
+        <a href="monTravail.html" class="btn-decouvrir col-5">Explorez mes compétences</a>
+        <a href="files/Cv ACHERAIOU Menad_compressed.pdf" download="CV_Menad_Acheraiou" class="download-btn d-flex justify-content-center">Télécharger mon CV</a>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="footer-content col-12">
+            <div class="footer-info d-flex justify-content-center">
+                <p>Conçu par ACHERAIOU Menad. Tous droits réservés.</p>
+            </div>
+            <div class="footer-legal d-flex justify-content-center">
+                <!-- Liens légaux -->
+                <ul>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                    <li><a href="conditions-utilisation.html">Conditions d'Utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Suivez-moi sur mes réseaux sociaux :</p>
+        <!-- Icônes de réseaux sociaux -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/menad-acheraiou-0b8637302/" target="_blank" class="social-icon linkedin">
+                <img src="images/linkedin logo.png" class="img-fluid" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/MenadAcheraiou" target="_blank" class="social-icon github">
+                <img src="images/Octicons-mark-github.svg" class="img-fluid" alt="GitHub">
+            </a>
+            <a href="https://www.facebook.com/menad.ache/" target="_blank" class="social-icon facebook">
+                <img src="images/facebook.png" class="img-fluid" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/menad_ach/" target="_blank" class="social-icon instagram">
+                <img src="images/instagram.webp" class="img-fluid" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bouton pour activer le mode sombre -->
+    <div id="dark-mode-toggle" class="dark-mode-toggle">
+        <button style="background: none; border: none;">🌙</button>
+    </div>
+
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="script/script.js"></script>
+</body>
+</html>
