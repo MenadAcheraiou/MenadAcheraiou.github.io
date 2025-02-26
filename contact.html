@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleContact.css">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 
     <title>Contact</title>
@@ -73,7 +73,7 @@
                     <img src="images/facebook.png" class="img-fluid" alt="Facebook">
                 </a>
                 <a href="https://www.instagram.com/menad_ach/" target="_blank" class="social-icon instagram">
-                    <img src="images/instagram.webp" class="img-fluid" alt="Instagram">
+                    <img src="images/Instagram.webp" class="img-fluid" alt="Instagram">
                 </a>
             </div>
         </div>
@@ -84,6 +84,43 @@
         <button style="background: none;border: none;">🌙</button>
     </div>
     <script src="script/script.js"></script>
+    <script>
+        // Initialiser EmailJS avec votre identifiant utilisateur
+        (function(){
+            emailjs.init("XzI9Y3g2eaw5N_Y-3"); // Remplacez par votre ID EmailJS
+        })();
+
+        // Cibler le formulaire
+        const contactForm = document.getElementById('contactForm');
+
+        // Ajouter un gestionnaire d'événement pour l'événement de soumission
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêcher le rechargement de la page
+
+            // Récupérer les données du formulaire
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            // Envoyer l'email via EmailJS
+            emailjs.send("service_zj6rfum", "template_laa1086", {
+  name: document.getElementById('name').value,
+  email: document.getElementById('email').value,
+  message: document.getElementById('message').value
+})
+.then(function(response) {
+  alert("Message envoyé avec succès !");
+})
+.catch(function(error) {
+  console.error("Erreur:", error);
+  alert("Erreur lors de l'envoi du message.");
+});
+
+        });
+    </script>
 
 </body>
+</html>
 </html>
