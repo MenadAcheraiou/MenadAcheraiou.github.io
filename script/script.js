@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     let i, j, k, a, b, c, x, y, z;
 
@@ -105,16 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
     changeBackgroundColor();
 });
 // Gestion des soumissions de formulaire
-function handleFormSubmit() {
-    event.preventDefault(); // Empêche le rechargement de la page
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        message: document.getElementById('message').value,
-    };
-    alert(`Nom : ${formData.name}\nEmail : ${formData.email}\nMessage : ${formData.message}`);
-}
-
 
 
 const targetName = "ACHERAIOU Menad";
@@ -188,9 +179,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
     
-
-    // Cibler le formulaire
-    const contactForm = document.getElementById('contactForm');
-
-    // Ajouter un gestionnaire d'événement pour l'événement de soumission
-    contactForm.addEventListener('submit', handleFormSubmit);
